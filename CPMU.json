@@ -1,0 +1,15 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+
+      "title": {"text": "Pub Sect: Liabilities: Monetary Gold & Special Drawing Right liabilities:NSA:£m", "fontSize": 12},
+      "data": {
+        "url": "https://raw.githubusercontent.com/1961928/1961928.github.io/main/data_ons-CPMU%20(1).json",
+        "format": {"type":"json", "property":"months"}},
+      "mark": { "type": "line"},
+      "encoding": {
+        "x": {"field": "date", "type": "temporal", "title":"month"},
+        "y": {"field": "value", "type": "quantitative", "title":""}
+      }
+    }
+    

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+    <link rel="stylesheet" href="style_portfolio.css">
+
+</head>
+<body>
+
+    <div class="myWeek1to4">
+        <a href="Homepage.html" id="link3" class="button3">Home</a>
+        <a href="project.html" id="link4" class="button4">My Project</a>
+        <a href="https://github.com/1961928/1961928.github.io" id="link5" class="button5">My Github page</a>
+        <h1>This is my homework portfolio</h1>
+        
+        <h3>Week 1</h3>
+        <p>The first chart shows current budget deficit.</p>
+        <div class="chart" id="Chart1"></div>
+
+        <p>My second chart looks at inflation</p>
+        <div class="chart" id="Chart2"> </div>
+
+        <h3>Week 2</h3>
+        <p>The first visualization shows the IMF lending outstanding while the second shows the the amount oustanding relative to world GDP. The lending outstanding relative to GDP was the highest in 1984 hence it was the riskiest year. 2022 is only the highest in nominal terms. </p>
+
+        <div class="chart" id="Chart3"></div>
+
+        <p>IMF lending outstanding as a % of world gdp</p>
+        <div class="chart" id="Chart33"></div>
+
+        <h3>Week 3</h3>
+        <p>Below is a stacked area chart of the UK spending index of credit and debit cards.</p>
+
+
+        <div class="chart" id="Chart4"></div>
+        <p>Same UK spending index data but presented in a line chart to make it easier to visualize the trends over time</p>
+        <div class="chart" id="Chart44"></div>
+
+        <h3>Week 4</h3>
+        <p>Chart for week 4 which shows the top 10 countries by population. I chose to scrape data from Wikipedia as it required little cleaning since there were clear headings and countries were already ranked by population. <a href="https://github.com/1961928/1961928.github.io/blob/main/Data_scraper(week4).ipynb" class = "linkcolab">Link to Colab code</a></p>
+
+        <div class="chart" id="Chart5"></div>
+
+
+    </div>
+    <div class="myWeek5"></div>
+        <h3>Week 5</h3>
+        <p>I used the ONS API and a loop to easily batch download the ONS data as json files which I then used to generate nine charts using Vega. <a href="https://github.com/1961928/1961928.github.io/blob/main/week5_api.ipynb" class="linkcolab"> Link to Colab code</a> </p>
+        <p>Source: ONS</p>
+        <div class="chartj" id="Chart6"></div>
+        <div class="chartj" id="Chart7"></div>
+        <div class="chartj" id="Chart8"></div>
+        <div class="chartj" id="Chart9"></div>
+        <div class="chartj" id="Chart10"></div>
+        <div class="chartj" id="Chart11"></div>
+        <div class="chartj" id="Chart12"></div>
+        <div class="chartj" id="Chart13"></div>
+        <div class="chartj" id="Chart14"></div>
+
+    </div>
+
+    <div class="myWeek7to8">
+ 
+        <h3>Week 7</h3>
+        <p>Below is a map of Thailand and provinces.</p>
+        <div class="chartwk7" id="Chart16"></div>
+
+        <p>This map also gives data on the population in each of the provinces.</p>
+        <div class="chartwk7" id="Chart17"> </div>
+
+        <h3>Week 8</h3>
+        <p>Argument: 
+
+            Public economic data should be made easier to interpret as many people have shown not to understand financial terminology such as inflation.
+            </p>
+
+            <p>Conclusion: 
+
+                The data on inflation shows that although some countries show a very high percentage of people who understand the word inflation such as Hongkong or Austria, some countries such as Italy and Romania show that only around 65% of people knew what inflation was. This data supports the argument that this sort of information should make it easier for the general public to understand.
+                
+                Next I look at the Financial literacy score, which is calculated out of 21 using several factors. The data shows some countries such as Colombia, Italy and Romania had a score of 11 out of 21 meaning that a significant amount of people may not understand important economic data released by the government. This again supports the claim that economic data should be made easier to understand for the public.
+                </p>
+
+        <div class="chartwk8" id="Chart18"></div>
+
+        <p></p>
+        <div class="chartwk8" id="Chart19"></div>
+
+    </div>
+
+    <div class="myWeek9to11">
+    <h3>Week 9</h3>
+    <h3>This is a scatter graph of CPI and HPI</h3>
+    <div class="chartwk9" id="Chart15"></div>
+    <h3>This shows the histogram of distributions of my machine learning model</h3>
+    <p>Source: FRED</p>
+    <img src="img/graph14.svg" alt="house price graph" class="svg">
+
+
+    <h3>Week 10 to 11</h3>
+    <p>For this task, I will use unsupervised classification to determine the quality of wine and group them together based on 11 different attributes. <a href="https://github.com/1961928/1961928.github.io/blob/main/Week9_Wine_cluster.ipynb" class = "linkcolab">Link to Colab code</a></p>
+    <p>Results: Although difficult to tell from the naked eye, the model found 6 different clusters and color coded them based on the attributes. However, the model was not too accurate in determining the quality of wine from the given data as the accuracy score was only around 62%.</p>
+        
+    <img src="img/wine.svg" alt="wine clustering" class="svg2">
+
+    <p>Here I try to predict house prices using machine learning based on several variables which were CPI, GDP, average 30-year fixed rate mortgage rate, real median household income, rental vacancy rate, monthly supply of new houses, employment level and consumer sentiment. <a href="https://github.com/1961928/1961928.github.io/blob/main/Final_Project_Data_Science_regression2.ipynb" class = "linkcolab">Link to Colab code</a></p>
+    <p>Results: The dots on the graph shows what the model had predicted and what the actual price was. The results show that the model was relatively accurate in predicting house prices but could still be improved by possibly adding more specific data which the model could use to predict house prices.</p>
+        
+
+    <img src="img/graph33_HP.svg" alt="hosue prices" class="svg3">
+
+</div>
+
+
+
+</body>
+
+<script>
+    //Define charts:
+    var myChart1 = "chartOne.json";
+    var myChart2 = "chartINF1.json";
+    var myChart3 = "chartIMF.json";
+    var myChart33 = "chartIMF_GDP.json";
+    var myChart4 = "week3_1.json";
+    var myChart44 = "week3_2.json";
+    var myChart5 = "week4.json";
+    var myChart6 = "CPMU.json";
+    var myChart7 = "CPMV.json";
+    var myChart8 = "CPMW.json";
+    var myChart9 = "CPMY.json";
+    var myChart10 = "CPMZ.json";
+    var myChart11 = "CPNA.json";
+    var myChart12 = "CPNB.json";
+    var myChart13 = "KSE6.json";
+    var myChart14 = "CPMX.json";
+    var myChart15 = "week9_dist.json";
+    var myChart16 = "thailandMap.json";
+    var myChart17 = "thailandmap_pop.json";
+    var myChart18 = "week8_1.json";
+    var myChart19 = "week8_2.json";
+
+
+    // Embed charts:
+    vegaEmbed('#Chart1', myChart1);
+    vegaEmbed('#Chart2', myChart2);
+    vegaEmbed('#Chart3', myChart3);
+    vegaEmbed('#Chart33', myChart33);
+    vegaEmbed('#Chart4', myChart4);
+    vegaEmbed('#Chart44', myChart44);
+    vegaEmbed('#Chart5', myChart5);
+    vegaEmbed('#Chart6', myChart6);
+    vegaEmbed('#Chart7', myChart7);
+    vegaEmbed('#Chart8', myChart8);
+    vegaEmbed('#Chart9', myChart9);
+    vegaEmbed('#Chart10', myChart10);
+    vegaEmbed('#Chart11', myChart11);
+    vegaEmbed('#Chart12', myChart12);
+    vegaEmbed('#Chart13', myChart13);
+    vegaEmbed('#Chart14', myChart14);
+    vegaEmbed('#Chart15', myChart15);
+    vegaEmbed('#Chart16', myChart16);
+    vegaEmbed('#Chart17', myChart17);
+    vegaEmbed('#Chart18', myChart18);
+    vegaEmbed('#Chart19', myChart19);
+
+    
+</script>
+
+
+</html>

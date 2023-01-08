@@ -1,0 +1,45 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+      
+        "width":430,
+        "height":430,
+        "title": {"text": "Map of change in House Price Index by State", "subtitle": "Source: Federal Housing Finace Agency (FHFA)", "subtitleColor": "gray"},
+        
+        "data":{
+          "url": "https://raw.githubusercontent.com/1961928/1961928.github.io/main/US_MAP.json",
+          "format":{"property":"features"}},
+      
+            "projection": {
+            "type":"albersUsa"
+          },
+      
+          "transform": [{
+            "lookup": "properties.NAME",
+            "from": {
+              "data": {
+                "url":"https://raw.githubusercontent.com/1961928/1961928.github.io/main/map_price_index2.csv"},
+                "key": "State",
+                "fields": ["Index", "Index_y1", "Index_y5"]      
+                }
+          }],
+      
+      
+          "mark": {
+            "type": "geoshape",
+            "stroke":"darkgray",
+            "strokeWidth":2
+          },
+          "encoding":{
+      
+            "color": {
+              "field": "Index",
+              "title": "Index since 1991",
+              "type": "quantitative"
+            },
+            "tooltip":[{"field":"properties.NAME", "type":"nominal", "title":"Province"},
+            {"field":"Index", "title":"House price index since 1991"}, {"field": "Index_y5", "title": "House price index since past 5 years"}, {"field": "Index_y1", "title": "House price index since past 12 months"}]
+          }
+        }
+      
+      

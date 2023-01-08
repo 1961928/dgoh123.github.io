@@ -1,0 +1,213 @@
+body{
+    background-color: rgb(0, 0, 0);
+ 
+}
+
+
+/* Choose the appearance of the tags, h1, h3 and p: */
+h3, p{
+    color:rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: 5%;
+}
+
+h1{
+    color:rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: 1000;
+    font-size: 50;
+    margin-top: 5%;
+}
+    
+.myWeek1to4{
+    margin: auto;
+    max-width: 550px;
+    background-color: rgb(0, 0, 0);
+}
+
+.chart{
+    background-color: white;
+    width:550px;
+
+    
+}
+
+.myWeek5{
+    margin: auto;
+    max-width: 500px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+
+}
+
+.chartj{
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    height: 300px;
+    left: 11%;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 1px;
+    border-color: rgb(154, 154, 154);
+    margin-bottom: 0.5cm;
+    display: inline-block;   
+}
+
+.myWeek7to8{
+    margin: auto;
+    max-width: 550px;
+    background-color: rgb(0, 0, 0);
+}
+
+
+.myWeek9to11{
+    margin: auto;
+    max-width: 550px;
+    background-color: rgb(0, 0, 0);
+}
+.chartwk9{
+    background-color: rgb(255, 255, 255);
+    width: 550px;
+    left: 0%;
+
+}
+
+
+
+.svg{
+    display: block;
+    margin:0px;
+    width: 550px;
+    height: 400px;
+  }
+
+  .svg2{
+    display: block;
+
+    width: 600px;
+    height: 450px;
+  }
+
+  .svg3{
+    display: block;
+    margin:0px;
+    width: 550px;
+    height: 400px;
+  }
+
+  .linkcolab{
+    color: rgb(20, 243, 0);
+  }
+/* buttons */
+
+#link3{
+    background-color: rgba(255, 255, 255);
+
+    padding:20px;
+    border:0px;
+    border-color:grey;
+    border-style: solid;
+    border-radius: 10px;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:700;
+    color:rgb(0, 0, 0);
+    
+    text-decoration: none;
+    
+}
+
+#link3:hover{
+
+    background-color: rgb(222, 222, 222);
+
+    border:0px;
+    border-color:yellow;
+    border-style: solid;
+    
+}
+
+#link4{
+    background-color: rgba(255, 255, 255);
+
+    padding:20px;
+    border:0px;
+    border-color:grey;
+    border-style: solid;
+    border-radius: 10px;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:700;
+    color:rgb(0, 0, 0);
+    
+    text-decoration: none;
+    
+}
+
+#link4:hover{
+
+    background-color: rgb(222, 222, 222);
+
+    border:0px;
+    border-color:yellow;
+    border-style: solid;
+    
+}
+
+#link5{
+    background-color: rgba(255, 255, 255);
+
+    padding:20px;
+    border:0px;
+    border-color:grey;
+    border-style: solid;
+    border-radius: 10px;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:700;
+    color:rgb(0, 0, 0);
+    
+    text-decoration: none;
+    
+}
+
+#link5:hover{
+
+    background-color: rgb(222, 222, 222);
+
+    border:0px;
+    border-color:yellow;
+    border-style: solid;
+    
+}
+
+.button3 {
+    left:5%;
+    top:5%;
+    width:140px;
+    height:20px;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    }
+.button4 {
+    left:5%;
+    top:20%;
+    width:140px;
+    height:20px;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    }
+
+.button5 {
+    left: 80%;
+    top:5%;
+    width:140px;
+    height:20px;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    }

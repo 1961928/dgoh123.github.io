@@ -1,0 +1,14 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+      "title": "PSNDX (millions)",
+      "data": {
+        "url": "https://raw.githubusercontent.com/1961928/1961928.github.io/main/data_ons-KSE6%20(1).json",
+        "format": {"type":"json", "property":"months"}},
+      "mark": "line",
+      "encoding": {
+        "x": {"field": "date", "type": "temporal", "title":"month"},
+        "y": {"field": "value", "type": "quantitative", "title":""}
+      }
+    }
+    

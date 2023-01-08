@@ -1,0 +1,56 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    
+      "width": 450,
+      "height": 450,
+      "title": {"text": "CPI and House Price Index (U.S.)", "subtitle": "Source: U.S. Bureau of Labor Statistics", "subtitleColor": "gray", "subtitleFontStyle": "Italic"},
+    
+    
+      "data": {
+        "url": "https://raw.githubusercontent.com/1961928/1961928.github.io/main/cpi%26price_index1.csv"
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "point",
+            "filled": true,
+            "tooltip": {"content": "data"},
+            "color": "darkturquoise"
+          },
+          "encoding": {
+            "x": {
+              "field": "cpi",
+              "type": "quantitative",
+              "title": "Consumer Price Index(CPI)"
+            },
+            "y": {
+              "field": "price_index",
+              "type": "quantitative",
+              "title": "House Price Index"
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "regression": "cpi",
+              "on": "price_index",
+              "params": true
+            },
+            {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+          ],
+          "mark": {
+            "type": "text",
+            "color": "firebrick",
+            "x": "width",
+            "align": "right",
+            "y": -5
+          },
+          "encoding": {
+            "text": {"type": "nominal", "field": "R2"}
+          }
+        }
+      ]
+    }
+    

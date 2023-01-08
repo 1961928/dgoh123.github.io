@@ -1,0 +1,17 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "width":300,
+    "height":300,
+    "title": {"text": "Consumer Price Index and House Price Index US", "subtitle": "Source: U.S. Bureau of Labor Statistics"},
+
+    "description": "Stock prices of 5 Tech Companies over Time.",
+    "data": {"url": "https://raw.githubusercontent.com/1961928/1961928.github.io/main/cpi_price_index2.csv"},
+    "mark": {"type": "line", "tooltip": true},
+    "encoding": {
+      "x": {"field": "date", "type": "temporal", "title": "Date"},
+      "y": {"field": "index", "type": "quantitative", "title": "Index"},
+      "color": {"field": "category", "type": "nominal", "title": ""}
+    }
+  }
+  

@@ -1,0 +1,18 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "width": 450,
+    "height": 300,
+    "title": {"text": "Top 10 Countries by Population", "subtitle": "Source: Wikipedia"},
+
+    "data": {
+      "url": "https://raw.githubusercontent.com/1961928/1961928.github.io/main/population_top10.csv"
+  
+    },
+    "mark": "bar",
+    "encoding": {
+      "x": {"field": "Country", "type": "nominal"},
+      "y": {"field": "Population", "type": "quantitative"}
+    }
+  }
+  

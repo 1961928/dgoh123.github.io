@@ -1,0 +1,43 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "width":460,
+    "height":380,
+    "title": "Map of Thailand and Population Per Province",
+    
+    "data":{
+      "url": "https://raw.githubusercontent.com/apisit/thailand.json/master/thailand.json",
+      "format":{"property":"features"}},
+  
+        "projection": {
+        "type":"equalEarth"
+      },
+  
+      "transform": [{
+        "lookup": "properties.name",
+        "from": {
+          "data": {
+            "url":"https://raw.githubusercontent.com/1961928/1961928.github.io/main/Book2.csv"},
+            "key": "Province",
+            "fields": [" Total "]      
+            }
+      }],
+  
+  
+      "mark": {
+        "type": "geoshape",
+        "stroke":"darkgray",
+        "strokeWidth":2
+      },
+      "encoding":{
+  
+        "color": {
+          "field": " Total ",
+          "type": "quantitative"
+        },
+        "tooltip":[{"field":"properties.name", "type":"nominal", "title":"Province"},
+        {"field":" Total ", "title":"population"}]
+      }
+    }
+  
+  

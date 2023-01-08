@@ -1,0 +1,15 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "width":450,
+    "height":350,
+  
+    "title": "All-Transactions House Price Index for the US",
+    "data": {"url": "https://raw.githubusercontent.com/1961928/1961928.github.io/main/cpi%26price_index1.csv"},
+    "mark": {"type": "line", "color": "deeppink", "tooltip": true},
+    "encoding": {
+      "x": {"field": "date", "type": "temporal", "title": "Date"},
+      "y": {"field": "price_index", "type": "quantitative","title": "House Price Index"}
+    }
+  }
+  
